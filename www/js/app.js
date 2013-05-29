@@ -1,4 +1,18 @@
 var angulargap = angular.module("angulargap", []);
-angulargap.controller("HomeController", function($scope){
-                      $scope.message = "AngularJS!";
-                      });
+
+angulargap.config(['$routeProvider', function ($routeProvider) {
+    console.log('setup routes');
+    $routeProvider.
+        when('/home', {
+            templateUrl: 'home.html',
+            controller: 'HomeController'
+        }).
+        when('/notifications', {
+            templateUrl: 'notifications.html',
+            controller: 'NotificationsController'
+        }).
+        otherwise(
+        {
+            redirectTo: '/home'
+        });
+}]);
