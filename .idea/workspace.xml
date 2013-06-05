@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/Controllers/InAppBrowser.js" afterPath="$PROJECT_DIR$/www/js/Controllers/InAppBrowserController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularGap.xcodeproj/project.xcworkspace/xcuserdata/colemanm.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AngularGap.xcodeproj/project.xcworkspace/xcuserdata/colemanm.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AngularGap.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1370305259572" ignored="false" />
-    <file path="/index.html" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1370311383972" ignored="false" />
+    <file path="/Dummy.txt" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1370390785571" ignored="false" />
+    <file path="/index.html" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1370391952749" ignored="false" />
     <file path="/app.js" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1370311007946" ignored="false" />
     <file path="/NotificationService.js" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1369788104886" ignored="false" />
     <file path="/index.css" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1369782212338" ignored="false" />
@@ -33,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="66" selection-start="4180" selection-end="4180" vertical-scroll-proportion="2.1937842">
+            <state line="86" column="50" selection-start="4529" selection-end="4529" vertical-scroll-proportion="-11.208333">
               <folding />
             </state>
           </provider>
@@ -60,19 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InAppBrowser.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/Controllers/InAppBrowser.js">
+      <file leaf-file-name="InAppBrowserController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/Controllers/InAppBrowserController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
+            <state line="15" column="59" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InAppBrowser.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="InAppBrowser.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/Directives/InAppBrowser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="3" selection-start="2427" selection-end="2427" vertical-scroll-proportion="0.0">
+            <state line="29" column="52" selection-start="0" selection-end="2427" vertical-scroll-proportion="0.61497325">
               <folding />
             </state>
           </provider>
@@ -129,7 +129,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
+    <option name="x" value="264" />
     <option name="y" value="22" />
     <option name="width" value="1260" />
     <option name="height" value="730" />
@@ -365,13 +365,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1260" height="730" extended-state="0" />
+    <frame x="264" y="22" width="1260" height="730" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497979" sideWeight="0.67156863" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -380,7 +381,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -531,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/Directives/InAppBrowser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="3" selection-start="2427" selection-end="2427" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="4" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
@@ -545,16 +538,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/Controllers/InAppBrowser.js">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
+        <state line="86" column="50" selection-start="4529" selection-end="4529" vertical-scroll-proportion="-11.208333">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/www/js/Controllers/InAppBrowserController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="66" selection-start="4180" selection-end="4180" vertical-scroll-proportion="2.1937842">
+        <state line="15" column="59" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/Directives/InAppBrowser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="52" selection-start="0" selection-end="2427" vertical-scroll-proportion="0.61497325">
           <folding />
         </state>
       </provider>
