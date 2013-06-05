@@ -8,6 +8,7 @@ angulargap.directive("openExternal", function($window){
             loadStop : "&",
             loadError: "&"
         },
+        replace:true,
         transclude: true,
         template:"<button class='btn' ng-click='openUrl()'><span ng-transclude></span></button>",
         controller: function($scope){

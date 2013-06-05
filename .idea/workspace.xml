@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/Controllers/InAppBrowser.js" afterPath="$PROJECT_DIR$/www/js/Controllers/InAppBrowserController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularGap.xcodeproj/project.xcworkspace/xcuserdata/colemanm.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AngularGap.xcodeproj/project.xcworkspace/xcuserdata/colemanm.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/Directives/InAppBrowser.js" afterPath="$PROJECT_DIR$/www/js/Directives/InAppBrowser.js" />
     </list>
     <ignored path="AngularGap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,6 +12,7 @@
     <file path="/app.js" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1370311007946" ignored="false" />
     <file path="/NotificationService.js" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1369788104886" ignored="false" />
     <file path="/index.css" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1369782212338" ignored="false" />
+    <file path="/InAppBrowser.js" changelist="a1f2822f-0c87-442e-80d4-e8ef9e6ee3d1" time="1370397031317" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <file leaf-file-name="InAppBrowser.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/Directives/InAppBrowser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="52" selection-start="0" selection-end="2427" vertical-scroll-proportion="0.61497325">
+            <state line="10" column="21" selection-start="271" selection-end="271" vertical-scroll-proportion="0.26737967">
               <folding />
             </state>
           </provider>
@@ -121,10 +120,10 @@
         <option value="$PROJECT_DIR$/www/js/Controllers/HomeController.js" />
         <option value="$PROJECT_DIR$/www/js/Controllers/NotificationsController.js" />
         <option value="$PROJECT_DIR$/www/js/Services/NotificationService.js" />
-        <option value="$PROJECT_DIR$/www/js/Directives/InAppBrowser.js" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/js/Controllers/InAppBrowser.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/Directives/InAppBrowser.js" />
       </list>
     </option>
   </component>
@@ -554,7 +553,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/Directives/InAppBrowser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="52" selection-start="0" selection-end="2427" vertical-scroll-proportion="0.61497325">
+        <state line="10" column="21" selection-start="271" selection-end="271" vertical-scroll-proportion="0.26737967">
           <folding />
         </state>
       </provider>
