@@ -5,15 +5,23 @@ angulargap.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/home', {
             templateUrl: 'home.html',
-            controller: 'HomeController'
+            controller: 'HomeController',
+            activeTab: "home"
         })
         .when('/notifications', {
             templateUrl: 'notifications.html',
-            controller: 'NotificationsController'
+            controller: 'NotificationsController',
+            activeTab: "notifications"
         })
         .when('/inAppBrowser', {
             templateUrl: 'in-app-browser.html',
-            controller: 'InAppBrowserController'
+            controller: 'InAppBrowserController',
+            activeTab: "inappbrowser"
+        })
+        .when('/contacts', {
+            templateUrl: 'contacts.html',
+            controller: 'ContactsController',
+            activeTab: "contacts"
         })
         .otherwise(
         {
