@@ -47,12 +47,17 @@
 </script>
 <script type="text/ng-template" id="nav.html">
     <ul class="nav nav-pills nav-stacked" ng-controller="NavController">
-        <li ng-class="{active : $route.current.activeTab == 'home'}"><a href="#/home">Home</a></li>
-        <li ng-class="{active : $route.current.activeTab == 'notifications'}"><a
-                href="#/notifications">Notifications</a></li>
-        <li ng-class="{active : $route.current.activeTab == 'inappbrowser'}"><a href="#/inAppBrowser">In App Browser</a>
+        <li ng-class="{active : $route.current.activeTab == 'home'}">
+            <a href="#/home">Home</a>
         </li>
-        <li ng-class="{active : $route.current.activeTab == 'contacts'}"><a href="#/contacts">Contacts</a></li>
+        <li ng-class="{active : $route.current.activeTab == 'notifications'}">
+            <a href="#/notifications">Notifications</a></li>
+        <li ng-class="{active : $route.current.activeTab == 'inappbrowser'}">
+            <a href="#/inAppBrowser">In App Browser</a>
+        </li>
+        <li ng-class="{active : $route.current.activeTab == 'contacts'}">
+            <a href="#/contacts">Contacts</a>
+        </li>
     </ul>
 </script>
 <script type=text/ng-template id=home.html>
@@ -106,42 +111,65 @@
         <div ng-include="'nav.html'"></div>
 
         <div>
-            <button class="btn" ng-click="action = 'find'">Find</button>
-            <button class="btn" ng-click="action = 'create'">Create</button>
+            <button class="btn" ng-click="showFindContact()">Find</button>
+            <button class="btn" ng-click="showCreateContact()">Create</button>
         </div>
-        <div>
-            <div>
-                <h2>Find Contact</h2>
-                <input type="text" ng-model="filter"/>
-                <button class="btn btn-success" ng-click="findContact()">Find Contact</button>
+        <div ng-switch on="state">
+            <div ng-switch-when="find">
+                <h3>Find Contact</h3>
+                <form class="form-search">
+                    <input type="text" ng-model="contactSearch" class="input-medium search-query" placeholder="search contacts"/>
+                    <button type="submit" class="btn" ng-click="findContact(contactSearch)">Search</button>
+                </form>
                 <div ng-show="contacts.length > 0">
-                    <table class="table">
+                    <table class="table table-striped">
                         <thead>
                         <tr>
                             <th>
                                 Name
                             </th>
-                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr ng-repeat="contact in contacts">
                             <td>
+                                <a ng-click="view(contact)">
                                 {{contact.name.givenName}}
                                 {{contact.name.familyName}}
-                            </td>
-                            <td>
-                                <button ng-click="edit(contact)" class="btn btn-info"><i class="icon-edit"></i></button>
+                                </a>
                             </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-
             </div>
-            <div>
-                <h2>Create Contact</h2>
+            <div ng-switch-when="view">
+                <h3>View Contact</h3>
+                <h4>{{contact.name.givenName}} {{contact.name.familyName}}</h4>
+                <h5>Addresses</h5>
+                <hr/>
+                <ul class="unstyled">
+                      <li ng-repeat="address in contact.addresses">
+                          <address>
+                              {{ address.streetAddress }}<br>
+                              {{ address.locality }}, {{ address.region }} {{ address.postalCode }}<br>
+                          </address>
+                      </li>
+                </ul>
+                <h5>Emails</h5>
+                <hr/>
+                <ul class="unstyled">
+                     <li ng-repeat="email in contact.emails">
+                         {{ email.value }}
 
+                     </li>
+                </ul>
+                <button ng-click="back()" class="btn btn-large"><i class="icon-backward"></i>Back</button>
+
+                <button ng-click="edit(contact)" class="btn btn-info btn-large"><i class="icon-edit"></i>Edit</button>
+            </div>
+            <div ng-switch-when="create">
+                <h3>Create Contact</h3>
                 <form class="form-horizontal">
                     <div class="control-group">
                         <label class="control-label" for="firstName">first name</label>
@@ -160,15 +188,9 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="birthDate">birth date</label>
-
                         <div class="controls">
-                            <input type="date" id="birthDate" ng-model="contact.birthday" placeholder="birth date">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <button class="btn btn-primary" ng-click="save()">Save</button>
+                            <button class="btn pull-left" ng-click="cancel()">Cancel</button>
+                            <button class="btn btn-success pull-right" ng-click="save()">Save</button>
                         </div>
                     </div>
                 </form>
