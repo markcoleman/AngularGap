@@ -10,3 +10,6 @@ http://tech.pro/tutorial/1349/phonegap-and-angularjs-notification-service
 
 InAppBrowser
 http://tech.pro/tutorial/1357/phonegap-and-angularjs-in-app-browser
+
+Contacts
+http://tech.pro/tutorial/1401/phonegap-and-angularjs-contacts
